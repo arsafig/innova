@@ -1,0 +1,16 @@
+<div class="encabezado">
+  <h1>Componente Wizard</h1>
+  <hr>
+  <h3>Completa los pasos a continuacion. </h3>
+</div>
+  <div class="contenedor-paginas">
+    <router-outlet ></router-outlet>
+  </div>
+<div  class="contenedor-boton">
+  <button  (click)="nav('ant')"> <- Anterior</button>
+  <button  (click)="nav('sig')">Siguiente -> </button>
+  <button  routerLink='/p1'>Inicio / </button>
+  <button  *ngIf="datosUsuario.valid" routerLink="/fin">Fin</button>
+</div>
+
+

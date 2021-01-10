@@ -1,0 +1,15 @@
+<h4 class="titulo-pagina">Dejanos un mensaje un mensaje.</h4>
+<div class="contenedor">
+  <div class="formulario">
+    <form autocomplete="off" [formGroup]=" wizard.datosUsuario">
+      <div class="">
+        <label class="campo">Mensaje</label>
+        <div class="etiqueta">
+          <textarea class="" type="text" placeholder="mensaje" rows="4" cols="50" formControlName="mensaje"></textarea>
+          <br>
+          <small class="atencion" *ngIf="wizard.validar('mensaje')">Ups. Revisa la info!</small>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

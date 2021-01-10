@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+input {
+  width: 100%;
+}
+
+/* contendor raiz */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* wizard component */
+.encabezado {
+  background-color: rgb(5, 33, 92);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.contenedor-paginas {
+  height: 300px;
+}
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  min-width: 460px;
+}
+
+/* !  paginas */
+
+.titulo-pagina {
+  margin: 10px 0 !important;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+.campo {
+  margin-top: 10px;
+}
+.etiqueta {
+  font-size: small;
+}
+
+.atencion {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Componente Reloj */
+
+.reloj{
+ font-size: 30px;
+}

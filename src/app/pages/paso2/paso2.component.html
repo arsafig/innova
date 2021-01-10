@@ -1,0 +1,21 @@
+<h4 class="titulo-pagina">Ingresa tu direccion.</h4>
+<div class="contenedor">
+  <div class="formulario">
+    <form autocomplete="off" [formGroup]=" wizard.datosUsuario">
+      <div class="campo">
+        <label class="etiqueta">Pais</label>
+        <div class="input">
+          <input type="text" placeholder="pais" formControlName="pais" />
+          <small class="atencion" *ngIf="wizard.validar('pais')">Ups. Revisa la info!</small>
+        </div>
+      </div>
+      <div class="campo">
+        <label class="etiqueta">Ciudad</label>
+        <div class="input">
+          <input type="text" placeholder="ciudad" formControlName="ciudad" />
+          <small class="atencion" *ngIf="wizard.validar('ciudad')">Ups. Revisa la info!</small>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
